@@ -558,6 +558,8 @@ body {
 .img-galery {
   object-fit: cover;
   display: block;
+  margin: 0;
+  /* width: 100%; */
 }
 
 .galery-item-2 {
