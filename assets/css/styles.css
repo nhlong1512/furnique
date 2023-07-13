@@ -508,7 +508,7 @@ body {
   line-height: 32px;
 }
 
-.shop-now {
+.show-now {
   padding: 6px 18px;
   border: 1px solid #5c59d4;
   background: #fff;
@@ -519,7 +519,7 @@ body {
   line-height: 28px;
 }
 
-.shop-now:hover {
+.show-now:hover {
   cursor: pointer;
   /* opacity: 0.8; */
   background-color: #5c59d4;
@@ -922,6 +922,10 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
+}
+
+.footer-list-mobile{
+  display: none;
 }
 
 /*
@@ -1392,15 +1396,15 @@ max-width: 480px
     margin: 11px 0;
   }
 
-  .shop-now {
+  .show-now {
     border: 1px solid #5c59d4;
     background: #fff;
     color: #121212;
     text-align: center;
-    padding: 5.111px 15.332px;
+    padding: 5.111px 12px;
     justify-content: center;
     align-items: center;
-    font-size: 17.035px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 23.849px; /* 140% */
   }
@@ -1482,7 +1486,7 @@ max-width: 480px
   .our-review {
     position: relative;
   }
-  .review{
+  .review {
     margin-bottom: 0;
   }
 
@@ -1681,9 +1685,70 @@ max-width: 480px
     font-weight: 500;
     line-height: 15.335px; /* 136.364% */
   }
-  .footer-img-abs{
+  .footer-img-abs {
     position: absolute;
     top: 366px;
     left: 0;
+  }
+  .wrap-footer{
+    padding-top: 44px;
+    padding-bottom: 28px;
+  }
+  .footer-content {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .logo-content {
+    margin-top: 14px;
+    color: #f5f5f5;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.28px;
+    max-width: 100%;
+  }
+
+  .footer-list-mobile{
+    display: flex;
+    flex-direction: column;
+    gap:42px;
+  }
+  .footer-item-ul-row-mobile{
+    display: flex;
+    flex:1;
+    gap:40px;
+  }
+  .footer-item-ul-mobile{
+    flex:1
+  }
+  .footer-item-title-mobile{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    margin-bottom: 16px;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-item-sub-list-mobile{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .footer-item-sub-mobile{
+    color: #f5f5f5;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  .copyright-text{
+    text-align: center;
+    margin-bottom: 28px;
   }
 }
