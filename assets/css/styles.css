@@ -924,7 +924,7 @@ body {
   line-height: 22px;
 }
 
-.footer-list-mobile{
+.footer-list-mobile {
   display: none;
 }
 
@@ -1034,6 +1034,80 @@ max-width: 480px
 
   .nav-icon-mobile {
     display: flex;
+  }
+
+  .menu-li {
+    text-decoration: none;
+    color: #232323;
+    transition: color 0.3s ease;
+  }
+
+  .menu-li:hover {
+    color: tomato;
+  }
+
+  .menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+  }
+
+  .close-icon {
+    display: block;
+    width: 33px;
+    height: 4px;
+    position: relative;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+
+  .menu {
+    position: absolute;
+    width: 344px;
+    margin: -100px 0 0 -350px;
+    padding: 30px;
+    padding-top: 90px;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+
+  .menu-li {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    font-size: 22px;
+  }
+
+  .menu-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0;
+    font-size: 22px;
+  }
+
+  .close-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  /*
+* And let's slide it in from the left
+*/
+  .menuToggle input:checked ~ ul {
+    transform: none;
   }
 
   .input-search {
@@ -1690,7 +1764,7 @@ max-width: 480px
     top: 366px;
     left: 0;
   }
-  .wrap-footer{
+  .wrap-footer {
     padding-top: 44px;
     padding-bottom: 28px;
   }
@@ -1709,20 +1783,20 @@ max-width: 480px
     max-width: 100%;
   }
 
-  .footer-list-mobile{
+  .footer-list-mobile {
     display: flex;
     flex-direction: column;
-    gap:42px;
+    gap: 42px;
   }
-  .footer-item-ul-row-mobile{
+  .footer-item-ul-row-mobile {
     display: flex;
-    flex:1;
-    gap:40px;
+    flex: 1;
+    gap: 40px;
   }
-  .footer-item-ul-mobile{
-    flex:1
+  .footer-item-ul-mobile {
+    flex: 1;
   }
-  .footer-item-title-mobile{
+  .footer-item-title-mobile {
     color: #fff;
     font-size: 18px;
     font-weight: 600;
@@ -1733,12 +1807,12 @@ max-width: 480px
     justify-content: space-between;
     align-items: center;
   }
-  .footer-item-sub-list-mobile{
+  .footer-item-sub-list-mobile {
     display: flex;
     flex-direction: column;
     gap: 12px;
   }
-  .footer-item-sub-mobile{
+  .footer-item-sub-mobile {
     color: #f5f5f5;
     font-family: Open Sans;
     font-size: 16px;
@@ -1747,20 +1821,20 @@ max-width: 480px
     margin: 0;
   }
 
-  .copyright-text{
+  .copyright-text {
     text-align: center;
     margin-bottom: 28px;
   }
 
-  .category-image{
+  .category-image {
     margin-right: 0;
   }
 
-  .product-img-mobile-23{
+  .product-img-mobile-23 {
     max-width: 193px;
   }
 
-  .category-card{
+  .category-card {
     justify-content: space-between;
   }
 }
